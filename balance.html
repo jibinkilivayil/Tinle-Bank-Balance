@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TINLE BANK</title>
+    <link rel="stylesheet" href="balance.css">
+    <title>favicon</title>
+    <link style="width: 10px;" rel="icon" type="image/x-icon" href="fotor_2023-4-23_23_49_57.png">
+</head>
+<body>
+    
+    <div class="main_div">
+        <div class="sub_div">
+         
+           <h2>TINLE BANK</h2>
+           <p>MONEY DEPOSIT</p>
+
+
+        <input class="ipDep"  id="ip_tag" style="text-decoration: none;" placeholder="Amount Enter Here" type="number">
+   
+        <p> <button id="dep_btn" onclick="deposit()"> Deposit</button></p>
+
+        <p>WITHDRAWAL</p>
+
+        <input class="ipwd" placeholder="Amount Enter Here" id="with_ip" type="number">
+
+        <p><button id="withdrw_btn" onclick="withdraw()">Withdraw</button></p>
+
+
+        <p><button id="dis_blc" onclick="display()">Show Balance</button></p>
+
+        <p id="disply" class="showblcp"></p>
+
+</div>
+    
+
+
+
+
+    <script>
+
+let balance =0;
+
+function deposit(){
+let dep = parseFloat( document.getElementById("ip_tag").value);
+    if (dep<=0){
+        alert("Invalid input")
+    }
+    
+      balance += dep;
+      document.getElementById("ip_tag").value="";
+
+
+}
+
+function withdraw(){
+let wdrw =parseFloat( document.getElementById("with_ip").value);
+if ( wdrw<=0){
+        alert("Invalid input")
+    }
+    
+
+balance -= wdrw;
+document.getElementById("with_ip").value=" ";
+}
+
+function display(){
+
+
+    document.getElementById("disply").innerHTML = "$ " +balance ;
+
+}
+ 
+</script>
+
+
+</body>
+</html>

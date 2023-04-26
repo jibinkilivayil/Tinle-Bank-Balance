@@ -1,0 +1,73 @@
+body{
+
+    background-image: url("pexels-trace-hudson-2529973.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.showblcp{
+    width: 179px;
+    height: 30px;
+   
+    font-size: medium;
+    text-align: center;
+    
+
+   
+}
+.main_div{   
+    
+    padding-top: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    
+}
+.sub_div{
+   
+    display: flex;
+    width: 35%;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(183, 197, 214, 0.6);
+    border-radius: 55px;
+        
+  
+}
+input{
+    border-radius: 5px;
+    
+}
+
+#disply{
+    padding-top: 26px;
+    text-align: center;
+    font-size: 26px;
+    width: 50%;
+    height: 45px;
+    background-color: #f7f8fa96;
+    border-radius: 15px;
+   
+}
+   
+
+ .ipDep {
+        width: 210px;
+        height: 35px;
+    }
+.ipwd {
+        width: 210px;
+        height: 35px;
+    }
+    button{
+        width: 100px;
+        height: 50px;
+        background-color: rgb(109, 129, 155);
+        font-weight: bold;
+        border-radius: 25px;
+    }
